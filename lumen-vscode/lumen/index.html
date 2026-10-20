@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LUMEN — Le Banc de Lumière</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<canvas id="c"></canvas>
+<div id="hud"><div>PLONGÉE <span id="ln"></span> · <b id="lname"></b><br><small id="goal"></small><div id="bar"><i></i></div></div><div style="text-align:right">LUMENS SAUVÉS <b id="sv">0</b><br><small id="bn"></small></div></div>
+<div id="cmp"><i id="arr">▲</i><br><b id="dst"></b></div>
+<div id="ban"></div><div id="chal"></div>
+<div id="alert">REQUIN EN CHASSE</div>
+<div id="help">Flèches / WASD : guider le banc · E / Q : monter / descendre · Espace : Pulse · Glisser : caméra · Molette : zoom · Clic : poser le guide · Échap : pause · M : son · G : effets</div>
+<div class="ov" id="title"><div><h1>LUMEN</h1><p>Vous êtes l’Esprit-Guide d’un banc de poissons lumineux. Attirez-les, adoptez les poissons dorés, évitez le requin et ramenez-les à la Source (suivez la flèche : l’océan n’a pas de limites).</p><p>Le Pulse (Espace) repousse le requin. Casque conseillé : le requin s’entend venir.</p><button id="go">Plonger</button></div></div>
+<div class="ov hid" id="end"><div><h1 id="et"></h1><p id="ep"></p><button id="re">Rejouer</button></div></div>
+<div class="ov hid" id="pause"><div><h1>PAUSE</h1><p>Plongée <b id="pl"></b> · <span id="pn"></span><br>Échap ou P pour reprendre. Vous pouvez encore tourner la caméra.</p><button id="rs">Reprendre</button> <button id="rt" class="alt">Recommencer</button> <button id="qt" class="alt">Menu</button></div></div>
+<script src="lib/three.min.js"></script>
+<script src="lib/CopyShader.js"></script>
+<script src="lib/LuminosityHighPassShader.js"></script>
+<script src="lib/EffectComposer.js"></script>
+<script src="lib/RenderPass.js"></script>
+<script src="lib/ShaderPass.js"></script>
+<script src="lib/UnrealBloomPass.js"></script>
+<script src="js/vehicle.js"></script>
+<script src="js/game.js"></script>
+<script src="js/fauna.js"></script></body></html>
